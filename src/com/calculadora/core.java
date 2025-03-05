@@ -21,10 +21,7 @@ public class core {
                 // IMC
             if (userChoice == 1 ) {
                 System.out.println("Vamos precisar do seu peso(EX: 73,0): ");
-                String getUserWeight = scanner.nextLine();
-                getUserWeight = getUserWeight.replace('.', ',');
-                double userWeight = Double.parseDouble(getUserWeight);
-
+                double userWeight = scanner.nextDouble();
                 System.out.println("Agora vamos precisar da sua altura(EX: 1,75): ");
                 double userHeight = scanner.nextDouble();
                 double resultIMC = calculateIMC.calculateIMC(userWeight, userHeight);
